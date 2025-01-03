@@ -21,7 +21,7 @@ const globalData = reactive({
   collageResult:null,
   //配置
   gravityEnable:false,
-  IP:'172.30.229.29'
+  IP:'localhost'
   // IP:'192.168.31.222'
 })
 // 监听整个 globalData 的变化
