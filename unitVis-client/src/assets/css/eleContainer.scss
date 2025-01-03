@@ -1,0 +1,57 @@
+.elements-container {
+    margin: 10px;
+    border: 2px solid black;
+    height: 90px;
+    // width: 100%;
+    border-radius: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+
+    .elements-wrapper {
+        width: fit-content;
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        height: fit-content;
+        // justify-content: center;
+        // align-items: center;
+        .element-img {
+            margin: 4px;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+
+        .addBtn {
+            padding: 0;
+            background-color: white;
+            margin: 4px;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .bi {
+                color: rgba($color: #000000, $alpha: .5);
+                margin: 0px;
+                font-size: 30px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #elementsInput {
+                display: none; /* 隐藏默认的文件上传input */
+              }
+        }
+    }
+    .empty-div{
+        height: 5px;
+        width: 100%;
+    }
+
+}

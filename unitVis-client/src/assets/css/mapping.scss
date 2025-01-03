@@ -1,0 +1,34 @@
+.mapping-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .dataOption {
+        width: 100%;
+        display: flex;
+
+        .column-select {
+            flex: 1;
+        }
+
+        .row-select {
+            width: fit-content;
+            margin-left: 5px;
+
+            .el-input {
+                width: 42px;
+            }
+        }
+    }
+    .filterOption{
+        width: 100%;
+        display: flex;
+        margin-top: 5px;
+    }
+    .visOption {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+}

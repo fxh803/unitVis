@@ -1,0 +1,34 @@
+weights_list: [1,1]
+
+# simple shape
+shape_type: ["circle","square"] # "square" or ["circle","square"]
+shape_num: [5,5] # num1 or [num1, num2]
+
+primitive_dir: "./data/a_olympic50"
+primitive_class: "any_shape_raster"
+shape_class: "closed"
+target_shape_mask_dir: "./data/2/target_shape.png"
+photos_dir: "./data/collage_images/example2_Disney/images"
+word_file: "./wordle.csv"
+font_path: "./HoboStd.otf"
+word_color: [123,234,111,255]
+max_words_num: 100
+
+primitive_pos_init_type: "distance_field" # "distance_field","random_within_shape","medial_axis"
+is_global_size: False
+is_rotate: True
+is_rotate_random: False
+initialize_fill_ratio: 0.55
+primitive_fill_ratio: 0.55
+
+render_img_size: 1000
+num_iters: 130
+
+svg_normalized_size: 100
+raster_normalized_size: 500
+outline_num_segments: 20
+
+base_lr:
+  size: 0.005
+  angle: 0.05
+  pos: 1.1

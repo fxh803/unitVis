@@ -1,0 +1,76 @@
+.collage-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); /* 阴影效果 */
+    border-radius: 10px;
+    .collage-btn{
+        width: 120px;
+        height: 30px;
+        font-size: 10px;
+    }
+    .stop-collage-btn{
+        width: 120px;
+        height: 30px;
+        font-size: 10px;
+    }
+    
+    .collage-play{
+        position: absolute;
+        right: 100px;
+        top: 50%;
+        transform:translate(-50%,-50%) ;
+    }
+    .collage-pause{
+        position: absolute;
+        right: 100px;
+        top: 50%;
+        transform:translate(-50%,-50%) ;
+    }
+    .replay-btn{
+        position: absolute;
+        right: 70px;
+        top: 50%;
+        transform:translate(-50%,-50%) ;
+    }
+    .collage-clear{
+        position: absolute;
+        right: 40px;
+        top: 50%;
+        transform:translate(-50%,-50%) ;
+    }
+    .collage-option{
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform:translate(-50%,-50%) ;
+    }
+    
+}
+
+.gravity-enable {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    .demonstration{
+        width: 100px;
+        transform: translate(0,-3px);
+    }
+    border-bottom: 1px solid #b8b8b881;
+  }
+
+  .animation-speed {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    .demonstration{
+        width: 100px;
+        margin-right: 20px;
+    }
+    .slider{
+        width: 100px;
+    }
+  }

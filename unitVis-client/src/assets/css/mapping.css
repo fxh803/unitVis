@@ -1,0 +1,30 @@
+.mapping-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.mapping-container .dataOption {
+  width: 100%;
+  display: flex;
+}
+.mapping-container .dataOption .column-select {
+  flex: 1;
+}
+.mapping-container .dataOption .row-select {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 5px;
+}
+.mapping-container .dataOption .row-select .el-input {
+  width: 42px;
+}
+.mapping-container .filterOption {
+  width: 100%;
+  display: flex;
+  margin-top: 5px;
+}
+.mapping-container .visOption {
+  width: 100%;
+  margin-top: 5px;
+}/*# sourceMappingURL=mapping.css.map */

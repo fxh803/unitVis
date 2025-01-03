@@ -1,0 +1,58 @@
+@charset "UTF-8";
+.animation-container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  pointer-events: none;
+}
+.animation-container .progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  border-radius: 0px;
+  z-index: 2;
+}
+.animation-container .progress .progress-bar {
+  text-align: center;
+  font-size: 10px;
+}
+.animation-container .preview-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.animation-container .preview-container .aniCanvas {
+  width: 100%;
+  height: 100%;
+}
+.animation-container .preview-container .mask {
+  position: absolute;
+  top: 50%; /* 调整位置 */
+  left: 50%; /* 调整位置 */
+  transform: translate(-50%, -50%);
+  opacity: 0.1;
+}
+.animation-container .preview-container .element {
+  position: absolute;
+  transform-origin: center;
+}
+.animation-container .preview-container .trace-element {
+  position: absolute;
+  transform-origin: center;
+}
+.animation-container .preview-container .line-display-element {
+  position: absolute;
+  transform-origin: center;
+}
+.animation-container .preview-container .collageResult {
+  opacity: 0;
+  position: absolute;
+  top: 50%; /* 调整位置 */
+  left: 50%; /* 调整位置 */
+  transform: translate(-50%, -50%);
+}/*# sourceMappingURL=animation.css.map */

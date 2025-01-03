@@ -1,0 +1,53 @@
+@charset "UTF-8";
+.elements-container {
+  margin: 10px;
+  border: 2px solid black;
+  height: 90px;
+  border-radius: 10px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+.elements-container .elements-wrapper {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.elements-container .elements-wrapper .element-img {
+  margin: 4px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.elements-container .elements-wrapper .addBtn {
+  padding: 0;
+  background-color: white;
+  margin: 4px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.elements-container .elements-wrapper .addBtn .bi {
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0px;
+  font-size: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.elements-container .elements-wrapper .addBtn #elementsInput {
+  display: none; /* 隐藏默认的文件上传input */
+}
+.elements-container .empty-div {
+  height: 5px;
+  width: 100%;
+}/*# sourceMappingURL=eleContainer.css.map */

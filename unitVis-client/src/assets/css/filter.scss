@@ -1,0 +1,28 @@
+.filter-container{
+    width: 100%;
+    height: 100%;
+    .filter-input{
+        width: 100%;
+        height: 25px;
+        font-size: 11px;
+        .filter-select{
+            width: 80px;
+            height: 25px;
+            // margin: 0;
+            padding: 0;
+            .el-select__wrapper{
+                min-height: 25px;
+                font-size: 11px;
+            }
+        }
+    }
+    .filter-select2{
+        width: 100%;
+        height: 25px;
+        padding: 0;
+        .el-select__wrapper{
+            min-height: 25px;
+            font-size: 11px;
+        }
+    }
+}

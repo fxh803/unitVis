@@ -1,0 +1,206 @@
+$primary-color: #409eff;
+$gray-color: #0000008f;
+$bg-color: #f2f2f6;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  background-color: $bg-color;
+  user-select: none;
+  -webkit-user-select: none;
+  /* 兼容 Webkit 浏览器 */
+  -moz-user-select: none;
+  /* 兼容 Firefox */
+  -ms-user-select: none;
+  /* 兼容 IE/Edge */
+}
+
+.myContainer {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  flex-direction: column;
+
+  .header {
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    // border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(100, 100, 100, 0.1);
+  }
+
+  .content {
+    display: flex;
+    width: 100%;
+    height: calc(100% - 50px);
+
+    .canvas-component-container {
+      flex: 1;
+      margin: 20px;
+      margin-left: 50px;
+      margin-right: 50px;
+      z-index: 2;
+      position: relative;
+
+      .collage-component-container {
+        position: absolute;
+        left: 50%;
+        bottom: 10px;
+        transform: translateX(-50%);
+        width: 500px;
+        height: 50px;
+        border-radius: 10px;
+
+      }
+
+      .collage-slide-enter-active,
+      .collage-slide-leave-active {
+        transition: transform 0.5s ease;
+      }
+
+      .collage-slide-enter-from {
+        transform: translate(-50%,200px);
+      }
+
+      .collage-slide-enter-to {
+        transform: translate(-50%,0px);
+      }
+
+      .collage-slide-leave-to {
+        transform: translate(-50%,200px);
+      }
+
+    }
+
+    .widget-container {
+      position: relative;
+      margin: 20px;
+      margin-left: 0;
+      width: 400px;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+
+      .table-component-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // padding: 5px;
+        // padding-bottom: 10px;
+        // padding-top: 5px;
+        height: 330px;
+        border-radius: 10px;
+        background-color: white;
+      }
+
+      .edit-container {
+        height: calc(100% - 330px - 20px);
+        margin-top: 20px;
+        background-color: white;
+        border-radius: 10px;
+        overflow-y: auto;
+        position: relative;
+        .edit-wrapper {
+          position: relative;
+          height: 100%;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+
+          .eleCanvas-component-container {
+            flex: 1;
+            min-height: 300px;
+          }
+        }
+      }
+      .disable-div {
+        top: calc(330px + 20px);
+        left: 0;
+        right: 0;
+        bottom: 0; /* 让 disable-div 填充父容器的整个高度 */
+        background-color: gray;
+        opacity: 0.4;
+        position: absolute;
+        border-radius: 10px;
+      }
+
+      
+    }
+
+  }
+}
+
+.canvas-slide-enter-active,
+.canvas-slide-leave-active {
+  transition: transform 0.5s;
+}
+
+.canvas-slide-enter-from {
+  transform: translateX(-3000px);
+}
+
+.canvas-slide-enter-to {
+  transform: translateX(0px);
+}
+
+.canvas-slide-leave-to {
+  transform: translateX(-3000px);
+}
+
+
+.table-slide-enter-active,
+.table-slide-leave-active {
+  transition: transform 0.5s;
+}
+
+.table-slide-enter-from {
+  transform: translateX(420px);
+}
+
+.table-slide-enter-to {
+  transform: translateX(0px);
+}
+
+.table-slide-leave-to {
+  transform: translateX(420px);
+}
+
+.edit-slide-enter-active,
+.edit-slide-leave-active {
+  transition: transform 0.5s;
+}
+
+.edit-slide-enter-from {
+  transform: translateX(420px);
+}
+
+.edit-slide-enter-to {
+  transform: translateX(0px);
+}
+
+.edit-slide-leave-to {
+  transform: translateX(420px);
+}
+
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
