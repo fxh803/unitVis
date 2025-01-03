@@ -11,7 +11,7 @@ npm install
 npm run dev
 ```
 
-This command will start a web service on port 8888 for development. You can access DG Comics at [http://localhost:8888/](http://localhost:8888/)
+This command will start a web service on port 8888 for development. You can access it at [http://localhost:8888/](http://localhost:8888/)
 
 ## Run the backend locally with Flask
 
